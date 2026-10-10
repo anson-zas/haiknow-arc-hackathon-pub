@@ -1,1 +1,1 @@
-# haiknow-arc-hackson-pub
+# haiknow-arc-hackathon-pub
