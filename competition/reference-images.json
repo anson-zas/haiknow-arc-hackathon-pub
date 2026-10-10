@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "delegation_patterns": [
+    {"kind": "error_message", "pattern": "(?:错误提示|错误消息|报错信息|校验提示)(?:文字|文本|内容)?\\s*(?:如|见|参见|详见|参考)\\s*(?:参考图|截图|下图|图)"},
+    {"kind": "instruction", "pattern": "(?:提示词|提示文案|提示文字|操作说明)(?:文字|文本|内容)?\\s*(?:如|见|参见|详见|参考)\\s*(?:参考图|截图|下图|图)"},
+    {"kind": "control_label", "pattern": "(?:按钮文字|字段标签|菜单名称|导航名称|选项内容)\\s*(?:如|见|参见|详见|参考)\\s*(?:参考图|截图|下图|图)"},
+    {"kind": "error_message", "pattern": "(?:error message|validation message|warning text)\\s+(?:(?:is|are)\\s+)?(?:as shown in|shown in|provided in|specified in|see)\\s+(?:the\\s+)?(?:(?:reference|attached|following)\\s+)?(?:image|screenshot|figure)"},
+    {"kind": "instruction", "pattern": "(?:prompt text|instruction text|instructions)\\s+(?:(?:is|are)\\s+)?(?:as shown in|shown in|provided in|specified in|see)\\s+(?:the\\s+)?(?:(?:reference|attached|following)\\s+)?(?:image|screenshot|figure)"},
+    {"kind": "control_label", "pattern": "(?:button labels?|field labels?|navigation labels?|option labels?)\\s+(?:(?:is|are)\\s+)?(?:as shown in|shown in|provided in|specified in|see)\\s+(?:the\\s+)?(?:(?:reference|attached|following)\\s+)?(?:image|screenshot|figure)"}
+  ]
+}

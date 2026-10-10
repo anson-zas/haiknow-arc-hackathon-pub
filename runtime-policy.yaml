@@ -1,0 +1,15 @@
+schema_version: 2
+workflow: simple
+model: {model_env: MODEL}
+profile: arc-bench
+transport:
+  coding_idle_seconds: 600
+limits:
+  # simple 路线：总预算内预留交付时间；不是额外延长。null 关闭预留。
+  delivery_reserve:
+    fraction: 0.15
+    minimum_minutes: 5
+    maximum_minutes: 20
+  # No total run deadline. Per-request idle detection and repair rounds remain.
+  time: null
+  max_business_repair_rounds: 8

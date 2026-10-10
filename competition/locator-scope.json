@@ -1,0 +1,14 @@
+{
+  "role_name_patterns": [
+    "(?<![\\w-])(?P<role>link|button)[ \\t]+(?:(?:named|called|labeled|labelled)[ \\t]+)?{quoted}",
+    "{quoted}[ \\t]+(?P<role>link|button)(?![\\w-])"
+  ],
+  "main_suffix_pattern": "^[ \\t]+(?:in|within)[ \\t]+(?:the[ \\t]+)?main[ \\t]+(?:content|landmark)(?![\\w-])",
+  "sentence_boundary_pattern": "[.!?;。！？；\\n]",
+  "uncertain_clause_pattern": "\\b(?:not|never|without|no|cannot|can['’]t|(?:does|do|is|are|should|must)n['’]t|unless|if|either|or|optional|may)\\b",
+  "click_prefix_pattern": "(?:^[ \\t]*(?:(?:(?:the|a|an)[ \\t]+)?(?!to\\b)[\\w-]+[ \\t]+)?|,[ \\t]*(?:and[ \\t]+)?|[ \\t]+and[ \\t]+)clicks?[ \\t]+(?:on[ \\t]+)?(?:the[ \\t]+)?(?:visible[ \\t]+)?$",
+  "locate_prefix_pattern": "(?:^[ \\t]*(?:(?:(?:the|a|an)[ \\t]+)?(?!to\\b)[\\w-]+[ \\t]+)?|,[ \\t]*(?:and[ \\t]+)?|[ \\t]+and[ \\t]+)locates?[ \\t]+(?:the[ \\t]+)?(?:visible[ \\t]+)?$",
+  "locate_click_suffix_pattern": "^[ \\t]*,?[ \\t]+and[ \\t]+clicks?[ \\t]+it(?![\\w-])",
+  "click_uncertain_clause_pattern": "\\b(?:can|could|might|would|whether|before|after|once|when|until)\\b",
+  "quote_pairs": [["\"", "\""], ["'", "'"], ["`", "`"], ["“", "”"], ["‘", "’"], ["「", "」"]]
+}

@@ -1,0 +1,85 @@
+{
+  "enabled": true,
+  "name_before_role_pattern": "^\\s*(?P<role>groups|group|searchboxes|checkboxes|comboboxes|textboxes|searchbox|articles|checkbox|combobox|buttons|textbox|dialogs|article|regions|button|fields|inputs|dialog|region|links|forms|field|input|link|form|对话框|按钮|链接|表单|字段)(?![\\w-])",
+  "role_before_name_pattern": "(?<![\\w-])(?P<role>groups|group|searchboxes|checkboxes|comboboxes|textboxes|searchbox|articles|checkbox|combobox|buttons|textbox|dialogs|article|regions|button|fields|inputs|dialog|region|links|forms|field|input|link|form|对话框|按钮|链接|表单|字段)\\s*(?:(?:named|labeled|labelled|called)\\s*)?(?:,?\\s*for example\\s*)?$",
+  "roles": {
+    "button": "button",
+    "buttons": "button",
+    "link": "link",
+    "links": "link",
+    "form": "form",
+    "forms": "form",
+    "textbox": "textbox",
+    "textboxes": "textbox",
+    "field": "unknown",
+    "fields": "unknown",
+    "input": "unknown",
+    "inputs": "unknown",
+    "dialog": "dialog",
+    "dialogs": "dialog",
+    "article": "article",
+    "articles": "article",
+    "region": "region",
+    "regions": "region",
+    "checkbox": "checkbox",
+    "checkboxes": "checkbox",
+    "combobox": "combobox",
+    "comboboxes": "combobox",
+    "searchbox": "searchbox",
+    "searchboxes": "searchbox",
+    "按钮": "button",
+    "链接": "link",
+    "表单": "form",
+    "字段": "unknown",
+    "对话框": "dialog",
+    "group": "group",
+    "groups": "group"
+  },
+  "quote_pairs": [
+    [
+      "\"",
+      "\""
+    ],
+    [
+      "'",
+      "'"
+    ],
+    [
+      "`",
+      "`"
+    ],
+    [
+      "“",
+      "”"
+    ],
+    [
+      "‘",
+      "’"
+    ],
+    [
+      "「",
+      "」"
+    ]
+  ],
+  "action_before_name_pattern": "\\b(?P<action>clicks?|opens?|chooses?|selects?|checks?|unchecks?|hovers?)\\s+(?:(?:on|over|the|a|an)\\s+){0,2}(?:(?:groups|group|searchboxes|checkboxes|comboboxes|textboxes|searchbox|articles|checkbox|combobox|buttons|textbox|dialogs|article|regions|button|fields|inputs|dialog|region|links|forms|field|input|link|form|对话框|按钮|链接|表单|字段)\\s+(?:(?:named|labeled|labelled|called)\\s*)?)?$",
+  "negated_action_pattern": "(?:\\bnot|\\bnever|\\bwithout|\\bcannot|\\bcan't|\\bdon't|\\bdoesn't)\\s*$",
+  "actions": {
+    "click": "click",
+    "clicks": "click",
+    "open": "open",
+    "opens": "open",
+    "choose": "choose",
+    "chooses": "choose",
+    "select": "select",
+    "selects": "select",
+    "check": "check",
+    "checks": "check",
+    "uncheck": "uncheck",
+    "unchecks": "uncheck",
+    "hover": "hover",
+    "hovers": "hover"
+  },
+  "navigation_collapse_pattern": "(?=[^.\\n]*\\bsidebar\\b)(?=[^.\\n]*\\bcollaps(?:e|es|ed|ing|ible)\\b)[^.\\n]*(?:icon[- ]only|icons?\\s+only)[^.\\n]*",
+  "navigation_collapse_negative_pattern": "\\b(?:not|never|without|cannot)\\b[^.\\n]*(?:collapse|icon)|\\b(?:doesn.t|don.t|can.t)\\b[^.\\n]*(?:collapse|icon)",
+  "container_role_negative_pattern": "\\b(?:not|never|without|cannot|can't|doesn't|don't)\\b|禁止|不得|不是|不能"
+}

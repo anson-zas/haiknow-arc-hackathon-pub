@@ -1,0 +1,3 @@
+{
+  "description_heading_pattern": "^[ \\t]*(?:#{1,6}[ \\t]+)?(?:\\*\\*)?(Original|Modified) Feature Description(?:\\*\\*)?[ \\t]*:?[ \\t]*$"
+}

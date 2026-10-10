@@ -1,0 +1,5 @@
+{
+  "unchanged_validation_limit": 3,
+  "validation_command_pattern": "\\b(?:vitest|playwright\\s+test|npm\\s+(?:run\\s+)?(?:test(?::[\\w-]+)?|build))\\b|\\bscripts/check\\.py\\b",
+  "repetition_scope": "command"
+}

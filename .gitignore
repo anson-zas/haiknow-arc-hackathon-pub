@@ -1,0 +1,38 @@
+# Local credentials and editor / OS state
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+.idea/
+
+# Installed dependencies and generated outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+node_modules/
+dist/
+build/
+coverage/
+.pytest_cache/
+
+# Local agent state, applications and diagnostics
+.codex/
+.arc/
+output/
+outputs/
+runs/
+logs/
+*.log
+*.jsonl
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+playwright-report/
+test-results/

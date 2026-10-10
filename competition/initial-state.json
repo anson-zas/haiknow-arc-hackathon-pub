@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "explicit_section_pattern": "(?:(?:seed (?:data|values)|initial data|preloaded data|预置数据|初始数据)\\s*[:：]|(?:the\\s+)?seeded data\\s+(?:is|includes?|contains?)\\b)",
+  "preprovisioned_given_pattern": "(?:\\b(?:system|application|database)\\s+(?:(?:already|initially)\\s+)?pre-provisions?\\b|^\\s*(?:a|an|the)\\s+[A-Za-z][\\w-]*(?:\\s+(?:named|called|titled))?(?:\\s+x+)?\\s+(?:is|are|has been|have been)\\s+(?:(?:already|initially)\\s+)?pre-provisioned\\b|(?P<adjectival>^\\s*(?:a|an|the)\\s+(?:independent\\s+)?pre-provisioned\\b))",
+  "negative_existence_pattern": "\\b(?:(?:does not|doesn't|do not|don't)\\s+exist|(?:is|are)\\s+(?:absent|unregistered|not\\s+(?:present|registered)))\\b",
+  "state_pattern": "(?:\\b(?:system|application|database)\\s+(?:(?:already|initially)\\s+)?(?:(?:does not|doesn't)\\s+)?(?:contains?|has|includes?)\\b|\\bthere\\s+(?:is|are)\\b|\\binitially\\b|\\balready exists?\\b|\\bexists?\\s*[.!]?$|系统(?:已|中)?(?:存在|包含|预置|没有|不存在)|初始(?:状态|数据)|已存在|预置)",
+  "negative_pattern": "(?:\\b(?:no|not|without|absent)\\b|不存在|没有)",
+  "action_prefix_pattern": "^(?:(?:the )?user\\s+)?(?:click|create|creates|creating|enter|type|select|submit|add|delete|remove|update|navigate|open)\\b|^(?:用户)?(?:点击|创建|输入|选择|提交|新增|删除|修改)",
+  "sensitive_field_pattern": "(?:password|passwd|secret|token|api[-_ ]?key|密码|口令|密钥)$",
+  "conditional_pattern": "\\b(?:if|when|unless|whenever)\\b|如果|当",
+  "unsupported_entity_pattern": "^(?:include|includes|contain|contains|show|shows|display|displays)$",
+  "modifier_pattern": "\\b(?:whose|which|that|with|without|belonging\\s+to|owned\\s+by|under|within|having|of)\\b|其中|属于|包含的",
+  "contains_modifier_pattern": "^\\s*whose\\s+(?P<fields>[A-Za-z][\\w-]*(?:\\s+or\\s+[A-Za-z][\\w-]*)*)\\s+contains?\\s+(?:(?:the\\s+)?(?:keyword|text|substring)\\s+)?$",
+  "independent_subject_pattern": "^\\s*[,，]?\\s*(?:and\\s+)?(?:a|an)\\s+"
+}

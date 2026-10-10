@@ -1,0 +1,49 @@
+{
+  "EditorSection": {"role": "button", "name": "label"},
+  "CheckboxGroup": {"role": "group", "name": "label"},
+  "SelectField": {"role": "combobox", "name": "label"},
+  "TextAreaField": {"role": "textbox", "name": "label"},
+  "RadioGroup": {"role": "group", "name": "label"},
+  "AsyncActionButton": {"role": "button", "name": "children"},
+  "AsyncActionMenu": {"role": "button", "name": "label"},
+  "ActionButton": {
+    "role": "button",
+    "name": "children"
+  },
+  "TextField": {
+    "role": "textbox",
+    "name": "label"
+  },
+  "NamedForm": {
+    "role": "form",
+    "name": "name"
+  },
+  "RecordCard": {
+    "role": "article",
+    "name": "name"
+  },
+  "Disclosure": {
+    "role": "button",
+    "name": "label"
+  },
+  "ActionMenu": {
+    "role": "button",
+    "name": "label"
+  },
+  "AsyncCheckbox": {
+    "role": "checkbox",
+    "name": "label"
+  },
+  "Dialog": {
+    "role": "dialog",
+    "name": "name"
+  },
+  "Menu": {
+    "role": "button",
+    "name": "label"
+  },
+  "ToggleGroup": {
+    "role": "group",
+    "name": "name"
+  }
+}

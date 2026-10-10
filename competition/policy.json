@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "external_dependencies_as_prerequisites": true,
+  "module_checks": true,
+  "local_mock_names_are_data": true,
+  "actions_use_buttons": true,
+  "respect_explicit_link_requirement": true,
+  "max_checkpoint_messages": 8,
+  "explicit_link_pattern": "(?:link|hyperlink|链接)\\s*(?:(?:named|labeled|called)\\s*)?[\"“`「]{name}[\"”`」]|[\"“`「]{name}[\"”`」]\\s*(?:link|hyperlink|链接)",
+  "explicit_action_pattern": "(?:button|按钮)\\s*(?:(?:named|labeled|called)\\s*)?[\"“`「]{name}[\"”`」]|[\"“`「]{name}[\"”`」]\\s*(?:button|按钮)",
+  "alternative_navigation_pattern": "(?:link\\s+or\\s+button|button\\s+or\\s+link|链接或按钮|按钮或链接)\\s*(?:(?:named|labeled|called)\\s*)?(?:exactly\\s*)?[\"“`「]{name}[\"”`」]|[\"“`「]{name}[\"”`」]\\s*(?:link\\s+or\\s+button|button\\s+or\\s+link|链接或按钮|按钮或链接)"
+}
